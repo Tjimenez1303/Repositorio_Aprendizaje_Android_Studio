@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/agrandarfuente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Agrandar fuente" />
+    <item
+        android:id="@+id/reducirfuente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Reducir fuente" />
+    <item
+        android:id="@+id/salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Salir" />
+    <item
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Color" >
+        <menu
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <item
+                android:id="@+id/rojo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Rojo" />
+            <item
+                android:id="@+id/verde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Verde" />
+            <item
+                android:id="@+id/azul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Azul" />
+        </menu>
+    </item>
+</menu>
