@@ -12,7 +12,8 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText et1, et2;
+
+    EditText et1,et2;
     TextView tv1;
     int suma;
 
@@ -24,7 +25,9 @@ public class MainActivity extends AppCompatActivity {
         et1 = findViewById(R.id.et1);
         et2 = findViewById(R.id.et2);
         tv1 = findViewById(R.id.tv1);
+
     }
+
 
     public void sumar(View view)
     {
@@ -44,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
 
-        // Paso 2: Recuperamos el valor de la suma y lo volvemos a poner en el TextViewS
+        // Paso 2: Recuperamos el valor de la suma y lo volvemos a poner en el TextView
         suma = savedInstanceState.getInt("valor");
         tv1.setText(String.format(Locale.getDefault(),"La suma: %d", suma));
     }
